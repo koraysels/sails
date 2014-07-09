@@ -29,16 +29,17 @@
     "lib": "lib"
   },
   "dependencies": {
-    "express": "3.4.3",
-    "rc": "~0.3.3",
-    "sails-stringfile": "~0.3.0",
     "async": "~0.2.9",
+    "captains-log": "~0.11.1",
+    "colors": "~0.6.2",
+    "express": "3.4.3",
+    "express3-handlebars": "^0.5.0",
     "lodash": "~2.4.1",
     "optimist": "~0.3.4",
-    "captains-log": "~0.11.1",
+    "rc": "~0.3.3",
     "reportback": "~0.1.4",
-    "sails-util": "~0.10.0",
-    "colors": "~0.6.2"
+    "sails-stringfile": "~0.3.0",
+    "sails-util": "~0.10.0"
   },
   "optionalDependencies": {
     "waterline": "git://github.com/balderdashy/waterline.git#v0.10",
@@ -57,7 +58,6 @@
     "grunt-cli": "~0.1.11",
     "ejs": "~0.8.4",
     "sails-disk": "git://github.com/balderdashy/sails-disk.git#v0.10",
-
     "commander": "~2.1.0",
     "enpeem": "~0.1.1",
     "grunt": "0.4.2",

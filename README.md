@@ -22,6 +22,57 @@ $ sudo npm install sails -g
 $ sails new testProject
 ```
 
+##  Setup handlebars view engine
+
+***goto config/views.js and change the engine to "handlebars"***
+
+***add the helpers and partials location like :***
+```layout: 'layouts/layout',
+  partials : 'partials',
+  helpers: require('./helpers') //pull in your helpers (I store it in config/helpers.js)
+```
+
+***example helpers file:***
+```
+	'use strict';
+    // The module to be exported
+    var helpers = {
+
+        json: function (obj) {
+            return JSON.stringify(obj);
+        },
+        dir: function (obj) {
+            console.dir(obj);
+        },
+        log: function (obj) {
+            console.log(obj);
+        },
+        equals: function (value1, value2, options) {
+            if (value1 == value2) {
+                return options.fn(this);
+            }
+        },
+        unequals: function (value1, value2, options) {
+            if (value1 != value2) {
+                return options.fn(this);
+            }
+        }
+    };
+    module.exports = helpers;
+```
+
+
+***delete the ejs files in the views folder and run***
+```sh
+$ sails generate views-handlebars
+```
+
+
+```sh
+# Create the app
+$ sails new testProject
+```
+
 **Lift sails:**
 ```sh
 # cd into the new folder

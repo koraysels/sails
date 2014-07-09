@@ -71,7 +71,8 @@
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-less": "~0.9.0",
     "grunt-contrib-coffee": "~0.7.0",
-    "grunt-sync": "~0.0.4"
+    "grunt-sync": "~0.0.4",
+    "sails-generate-views-handlebars": "git://github.com/jmtexier/sails-generate-views-handlebars"
   },
   "testDependencies": {
     "root-require": "~0.2.0",

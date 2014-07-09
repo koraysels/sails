@@ -27,7 +27,8 @@ $ sails new testProject
 ***goto config/views.js and change the engine to "handlebars"***
 
 ***add the helpers and partials location like :***
-```layout: 'layouts/layout',
+```
+  layout: 'layouts/layout',
   partials : 'partials',
   helpers: require('./helpers') //pull in your helpers (I store it in config/helpers.js)
 ```
